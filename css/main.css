@@ -1,0 +1,84 @@
+/*Estableciendo todos las cajas a border-box parta poder modificar sus tamaños*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Mediante el selector de clase, al elemento que tenga el valor "field", se determina su ancho y altura y color*/
+
+.field {
+    height: 450px;
+    width: 800px;
+    background-color: rgba(73, 185, 126, 0.801);
+}
+
+
+/*Mediante el selector de clase, al elemento que tenga el valor "border", se determina su ancho y altura.Su posición tienen el valor relativo, para poder generar solapamiento sobre el elemento field. No se aplica color de fondo, ya que solo debe verse el doble*/
+
+.border {
+    height: 410px;
+    width: 768px;
+    border: 5px solid white;
+    position: relative;
+    bottom: 430px;
+    left: 15px;
+}
+
+
+/*/*Mediante el selector de clase, al elemento que tenga el valor "arc-lef" y "arc-right", se determina su ancho y altura. Ambos se determinan con una posición relativa, para poder generar solapamiento sobre los elementos anteriores. Tampoco se aplica borde, ya que representan los arcos.*/
+
+.arc-left {
+    border: 5px solid white;
+    height: 160px;
+    width: 100px;
+    position: relative;
+    bottom: 725px;
+    left: 15px;
+}
+
+.arc-right {
+    border: 5px solid white;
+    height: 160px;
+    width: 100px;
+    position: relative;
+    bottom: 885px;
+    left: 683px;
+}
+
+
+/*Mediante el selector de clase, al elemento que tenga el valor "circle", se determina su ancho y altura. Se determina su posición en relative para poder ubicarlo al centro. Para generar un cículo se usa la propiedad border-radius*/
+
+.circle {
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1040px;
+    left: 340px;
+}
+
+
+/*Los los siguiente tres selectores de clase "one" "two" y "three", representan los balones de fútbol, que han sido insertados al documento HTML, mediante la etiqueta imagen. También se determinó su propiedad position a relative para poder ubicarlos y solo varió el desplazamiento*/
+
+.one {
+    width: 20px;
+    position: relative;
+    bottom: 1190px;
+    left: 95px;
+}
+
+.two {
+    width: 20px;
+    position: relative;
+    bottom: 1270px;
+    left: 420px;
+}
+
+.three {
+    width: 20px;
+    position: relative;
+    bottom: 1118px;
+    left: 655px;
+}
